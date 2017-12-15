@@ -4,8 +4,8 @@ public class Flute extends Instrument{
 
     private FluteType key;
 
-    public Flute(double inputBuy, double inputSell, InstrumentType inputType,String inputMake, FluteType inputKey) {
-        super(inputBuy, inputSell, inputType, inputMake);
+    public Flute(double inputBuy, double inputSell,String inputMake, FluteType inputKey) {
+        super(inputBuy, inputSell, InstrumentType.WOODWIND, inputMake);
         this.key = inputKey;
     }
 

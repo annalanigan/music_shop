@@ -12,7 +12,7 @@ public class FluteTest {
 
     @Before
     public void before(){
-        flute = new Flute(100, 150, InstrumentType.WOODWIND, "Yamaha", FluteType.CFLUTE);
+        flute = new Flute(100, 150, "Yamaha", FluteType.CFLUTE);
     }
 
     @Test

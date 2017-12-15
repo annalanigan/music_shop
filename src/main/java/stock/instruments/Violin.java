@@ -2,8 +2,8 @@ package stock.instruments;
 
 public class Violin extends Instrument{
 
-    public Violin(double inputBuy, double inputSell, InstrumentType inputType, String inputMake) {
-        super(inputBuy, inputSell, inputType, inputMake);
+    public Violin(double inputBuy, double inputSell, String inputMake) {
+        super(inputBuy, inputSell, InstrumentType.STRING, inputMake);
     }
 
     public String play() {
