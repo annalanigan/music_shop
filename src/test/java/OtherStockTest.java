@@ -1,23 +1,22 @@
 import org.junit.Before;
 import org.junit.Test;
-import stock.instruments.Violin;
-import stock.stockitems.Musicstands;
+import stock.stockitems.Musicstand;
 import stock.stockitems.Sheetmusic;
-import stock.stockitems.Violinstrings;
+import stock.stockitems.Violinstring;
 
 import static org.junit.Assert.assertEquals;
 
 public class OtherStockTest {
 
-    private Musicstands musicStand;
+    private Musicstand musicStand;
     private Sheetmusic sheetMusic;
-    private Violinstrings strings;
+    private Violinstring strings;
 
     @Before
     public void before(){
-        musicStand = new Musicstands(20, 40);
+        musicStand = new Musicstand(20, 40);
         sheetMusic = new Sheetmusic(6, 18, "O Mio Babbino Caro", "Puccini");
-        strings = new Violinstrings(1, 3, "Pirastro");
+        strings = new Violinstring(1, 3, "Pirastro");
     }
 
     @Test

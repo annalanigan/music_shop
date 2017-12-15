@@ -2,11 +2,11 @@ package stock.stockitems;
 
 import stock.AllStock;
 
-public class Violinstrings extends AllStock{
+public class Violinstring extends AllStock{
 
     private String brand;
 
-    public Violinstrings(double inputBuy, double inputSell, String brand) {
+    public Violinstring(double inputBuy, double inputSell, String brand) {
         super(inputBuy, inputSell);
         this.brand = brand;
     }
