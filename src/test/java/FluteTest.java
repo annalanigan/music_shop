@@ -1,6 +1,6 @@
-import instruments.Flute;
-import instruments.FluteType;
-import instruments.InstrumentType;
+import stock.instruments.Flute;
+import stock.instruments.FluteType;
+import stock.instruments.InstrumentType;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -12,11 +12,11 @@ public class FluteTest {
 
     @Before
     public void before(){
-        flute = new Flute(InstrumentType.WOODWIND, "Yamaha",100, FluteType.CFLUTE);
+        flute = new Flute(100, 150, InstrumentType.WOODWIND, "Yamaha", FluteType.CFLUTE);
     }
 
     @Test
-    public void canPLayFlute(){
+    public void canPlayFlute(){
         assertEquals("Trill", flute.play());
     }
 

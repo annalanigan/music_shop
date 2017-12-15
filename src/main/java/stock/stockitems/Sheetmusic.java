@@ -1,4 +1,4 @@
-package stockitems;
+package stock.stockitems;
 
 public class Sheetmusic {
 }
