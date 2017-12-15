@@ -20,6 +20,9 @@ public class FluteTest {
         assertEquals("Trill", flute.play());
     }
 
-
+    @Test
+    public void canGetBuyPrice(){
+        assertEquals(100, flute.getBuyPrice(), 0.01);
+    }
 
 }

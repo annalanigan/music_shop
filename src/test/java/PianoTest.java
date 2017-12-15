@@ -19,4 +19,11 @@ public class PianoTest {
     public void canPlay(){
         assertEquals("plinky plonk", piano1.play());
     }
+
+    @Test
+    public void canGetSellPrice(){
+        assertEquals(28000, piano1.getSellPrice(),0.01);
+    }
+
+
 }
