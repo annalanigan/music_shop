@@ -8,7 +8,7 @@ public class Sheetmusic extends AllStock{
     private String composer;
 
     public Sheetmusic(double inputBuy, double inputSell, String title, String composer) {
-        super(inputBuy, inputSell);
+        super(inputBuy, inputSell, (title + " by " + composer));
         this.title = title;
         this.composer = composer;
     }

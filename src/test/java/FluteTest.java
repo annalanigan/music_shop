@@ -25,4 +25,8 @@ public class FluteTest {
         assertEquals(100, flute.getBuyPrice(), 0.01);
     }
 
+    @Test
+    public void canGetDescription(){
+        assertEquals("Yamaha Flute", flute.getDescription());
+    }
 }

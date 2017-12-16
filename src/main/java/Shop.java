@@ -1,5 +1,6 @@
 import stock.ISell;
 import stock.instruments.Flute;
+import stock.stockitems.Musicstand;
 
 import java.util.ArrayList;
 
@@ -18,4 +19,17 @@ public class Shop {
     public void addStock(ISell item) {
         stock.add(item);
     }
+
+    public void removeItem(ISell item) {
+        stock.remove(item);
+    }
+
+    public void showItems(){
+        for (ISell item : stock){
+            System.out.println(item);
+        }
+    }
+
+
+
 }

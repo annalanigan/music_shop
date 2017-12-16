@@ -7,7 +7,7 @@ public class Violinstring extends AllStock{
     private String brand;
 
     public Violinstring(double inputBuy, double inputSell, String brand) {
-        super(inputBuy, inputSell);
+        super(inputBuy, inputSell, "Violin String");
         this.brand = brand;
     }
 

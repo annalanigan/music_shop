@@ -34,4 +34,19 @@ public class OtherStockTest {
         assertEquals("Puccini", sheetMusic.getComposer());
     }
 
+    @Test
+    public void getSheetMusicDescription(){
+        assertEquals("O Mio Babbino Caro by Puccini", sheetMusic.getDescription());
+    }
+
+    @Test
+    public void getMusicStandDescription(){
+        assertEquals("Music stand", musicStand.getDescription());
+    }
+
+    @Test
+    public void getViolinStringDescription(){
+        assertEquals("Violin String", strings.getDescription());
+    }
+
 }

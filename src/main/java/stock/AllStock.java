@@ -4,10 +4,12 @@ public abstract class AllStock implements ISell{
 
     private double buyPrice;
     private double sellPrice;
+    private String description;
 
-    public AllStock(double inputBuy, double inputSell){
+    public AllStock(double inputBuy, double inputSell, String inputDescription){
         this.buyPrice = inputBuy;
         this.sellPrice = inputSell;
+        this.description = inputDescription;
     }
 
     public double calculateMarkup(){
@@ -29,4 +31,9 @@ public abstract class AllStock implements ISell{
     public void setSellPrice(double sellPrice) {
         this.sellPrice = sellPrice;
     }
+
+    public String getDescription(){
+        return this.description;
+    }
+
 }

@@ -4,6 +4,7 @@ import stock.instruments.InstrumentType;
 import stock.instruments.Violin;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 public class ViolinTest {
 
@@ -17,6 +18,11 @@ public class ViolinTest {
     @Test
     public void canCalculateMarkup(){
         assertEquals(100, violin1.calculateMarkup(), 0.01);
+    }
+
+    @Test
+    public void canGetDescription(){
+        assertEquals("Stradavarius Violin", violin1.getDescription());
     }
 
 

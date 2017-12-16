@@ -25,5 +25,10 @@ public class PianoTest {
         assertEquals(28000, piano1.getSellPrice(),0.01);
     }
 
+    @Test
+    public void getDescription(){
+        assertEquals("Steinway Grand Piano", piano1.getDescription());
+    }
+
 
 }

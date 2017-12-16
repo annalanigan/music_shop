@@ -5,7 +5,7 @@ import stock.AllStock;
 public class Musicstand extends AllStock {
 
     public Musicstand(double inputBuy, double inputSell) {
-        super(inputBuy, inputSell);
+        super(inputBuy, inputSell, "Music stand");
     }
 
 }

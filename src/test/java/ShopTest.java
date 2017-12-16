@@ -1,5 +1,6 @@
 import org.junit.Before;
 import org.junit.Test;
+import stock.ISell;
 import stock.instruments.*;
 import stock.stockitems.Musicstand;
 import stock.stockitems.Sheetmusic;
@@ -38,6 +39,23 @@ public class ShopTest {
         shop.addStock(flute);
         shop.addStock(violin);
         assertEquals(2, shop.stockCount());
+    }
+
+    @Test
+    public void canRemoveItem(){
+        shop.addStock(sheetMusic);
+        shop.addStock(string);
+        shop.addStock(musicstand);
+        shop.removeItem(musicstand);
+        assertEquals(2, shop.stockCount());
+    }
+
+    @Test
+    public void canListItems(){
+        shop.addStock(sheetMusic);
+        shop.addStock(string);
+        shop.addStock(musicstand);
+        shop.showItems();
     }
 
 }
