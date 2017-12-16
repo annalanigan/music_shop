@@ -55,7 +55,21 @@ public class ShopTest {
         shop.addStock(sheetMusic);
         shop.addStock(string);
         shop.addStock(musicstand);
+        shop.addStock(violin);
+        shop.addStock(piano);
+        shop.addStock(flute);
         shop.showItems();
+    }
+
+    @Test
+    public void canGetTotalBuyPrice(){
+        shop.addStock(sheetMusic);
+        shop.addStock(string);
+        shop.addStock(musicstand);
+        shop.addStock(violin);
+        shop.addStock(piano);
+        shop.addStock(flute);
+        assertEquals(2516, shop.totalMarkup(), 0.01);
     }
 
 }

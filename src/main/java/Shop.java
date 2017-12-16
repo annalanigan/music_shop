@@ -25,11 +25,18 @@ public class Shop {
     }
 
     public void showItems(){
+        int index = 1;
         for (ISell item : stock){
-            System.out.println(item);
+            System.out.println(index + ": " + item.getDescription());
+            index++;
         }
     }
 
-
-
+    public double totalMarkup() {
+        double total = 0;
+        for (ISell item : stock){
+            total += item.calculateMarkup();
+        }
+        return total;
+    }
 }
