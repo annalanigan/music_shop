@@ -51,6 +51,19 @@ public class ShopTest {
     }
 
     @Test
+    public void canRemoveByIndex(){
+        shop.addStock(sheetMusic);
+        shop.addStock(string);
+        shop.addStock(musicstand);
+        shop.addStock(violin);
+        shop.addStock(piano);
+        shop.addStock(flute);
+        shop.removeItemIndex(4);
+        assertEquals(5, shop.stockCount());
+        shop.showItems();
+    }
+
+    @Test
     public void canListItems(){
         shop.addStock(sheetMusic);
         shop.addStock(string);

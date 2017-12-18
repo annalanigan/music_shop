@@ -24,6 +24,8 @@ public class Shop {
         stock.remove(item);
     }
 
+
+
     public void showItems(){
         int index = 1;
         for (ISell item : stock){
@@ -38,5 +40,9 @@ public class Shop {
             total += item.calculateMarkup();
         }
         return total;
+    }
+
+    public void removeItemIndex(int index) {
+        stock.remove(index);
     }
 }
